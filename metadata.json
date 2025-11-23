@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Salsifie",
+  "description": "Messagerie cryptée post-quantique anonyme avec Stories et partage de fichiers éphémères.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
