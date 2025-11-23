@@ -125,13 +125,8 @@ export default function App() {
     
     // Artificial delay
     setTimeout(async () => {
-      let replyText = "";
-      // Use Gemini if available
-      if (process.env.API_KEY) {
-         replyText = await getSmartReply(textHistory, userText);
-      } else {
-         replyText = "Message reçu. Le cryptage est stable.";
-      }
+      // Get local smart reply
+      const replyText = await getSmartReply(textHistory, userText);
 
       const replyMsg: Message = {
         id: Date.now().toString(),
